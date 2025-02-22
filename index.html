@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,65 +11,169 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- Custom styles -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'primary-color': '#E76F51'
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-color': '#E76F51'
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
+
 <body>
     <section class="container mx-auto">
         <!-- Navbar -->
         <div class="navbar">
             <div class="navbar-start flex-1">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-32 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
                 </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-32 p-2 shadow">
-                  <li><a>Item 1</a></li>
-                  <li><a>Item 2</a></li>
-                  <li><a>Item 3</a></li>
-                </ul>
-              </div>
-              <a class="text-xl md:text-3xl font-bold">Biker Zone</a>
+                <a class="text-xl md:text-3xl font-bold">Biker Zone</a>
             </div>
-
-
             <div class="hidden lg:flex mr-16">
-              <ul class="menu menu-horizontal px-1 font-semibold text-gray-700">
-                <li><a>Home</a></li>
-                <li><a>Shop</a></li>
-                <li><a>News</a></li>
-                <li><a>Contact</a></li>
-              </ul>
+                <ul class="menu menu-horizontal px-1 font-semibold text-gray-700">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>News</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
             </div>
             <div class="">
-              <a class="bg-primary-color text-white text-sm md:text-base border-0 font-bold p-2 px-6 md:py-3 md:px-10 rounded-md cursor-pointer hover:bg-stone-600 transition-2s">Login</a>
+                <a
+                    class="bg-primary-color text-white text-sm md:text-base border-0 font-bold p-2 px-6 md:py-3 md:px-10 rounded-md cursor-pointer hover:bg-stone-600 transition-2s">Login</a>
             </div>
-          </div>
+        </div>
+        <!-- Hero / Carousel section -->
+        <div class="carousel w-full">
+            <!-- slider 1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+                <div class="hero">
+                    <div
+                        class="hero-content flex-col-reverse lg:flex-row-reverse mt-8 md:mt-20 bg-rose-50 p-8 md:p-16 rounded-lg">
+                        <div class="flex-1">
+                            <img class="w-5/6 mx-auto" src="/images/slider/bike1.png" />
+                        </div>
+                        <div class="flex-1 pl-6">
+                            <h1 class="text-3xl md:text-5xl lg:text-7xl font-bold text-black w-5/6 md:w-full">Ride-on R15 V4 with Smile
+                            </h1>
+                            <p class="py-6 w-5/6 font-semibold text-gray-700">Amet minim mollit non deserunt ullamco
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <a
+                                class="bg-primary-color text-white text-sm md:text-base border-0 font-bold p-2 px-6 md:py-3 md:px-10 rounded-md cursor-pointer hover:bg-stone-600 inline-block my-6">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="text-3xl text-primary-color">❮</a>
+                    <a href="#slide2" class="text-3xl text-primary-color">❯</a>
+                </div>
+            </div>
+            <!-- slider 2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="hero">
+                    <div
+                        class="hero-content flex-col-reverse lg:flex-row-reverse mt-8 md:mt-20 bg-rose-50 p-8 md:p-16 rounded-lg">
+                        <div class="flex-1">
+                            <img class="w-5/6 mx-auto" src="/images/slider/bike2.png" />
+                        </div>
+                        <div class="flex-1 pl-6">
+                            <h1 class="text-3xl md:text-5xl lg:text-7xl font-bold text-black w-5/6 md:w-full">Ride-on R15 V4 with Smile
+                            </h1>
+                            <p class="py-6 w-5/6 font-semibold text-gray-700">Amet minim mollit non deserunt ullamco
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <a
+                                class="bg-primary-color text-white text-sm md:text-base border-0 font-bold p-2 px-6 md:py-3 md:px-10 rounded-md cursor-pointer hover:bg-stone-600 inline-block my-6">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="text-3xl text-primary-color">❮</a>
+                    <a href="#slide3" class="text-3xl text-primary-color">❯</a>
+                </div>
+            </div>
+            <!-- slider 3 -->
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="hero">
+                    <div
+                        class="hero-content flex-col-reverse lg:flex-row-reverse mt-8 md:mt-20 bg-rose-50 p-8 md:p-16 rounded-lg">
+                        <div class="flex-1">
+                            <img class="w-5/6 mx-auto" src="/images/slider/bike3.png" />
+                        </div>
+                        <div class="flex-1 pl-6">
+                            <h1 class="text-3xl md:text-5xl lg:text-7xl font-bold text-black w-5/6 md:w-full">Ride-on R15 V4 with Smile
+                            </h1>
+                            <p class="py-6 w-5/6 font-semibold text-gray-700">Amet minim mollit non deserunt ullamco
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <a
+                                class="bg-primary-color text-white text-sm md:text-base border-0 font-bold p-2 px-6 md:py-3 md:px-10 rounded-md cursor-pointer hover:bg-stone-600 inline-block my-6">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="text-3xl text-primary-color">❮</a>
+                    <a href="#slide4" class="text-3xl text-primary-color">❯</a>
+                </div>
+            </div>
+            <!-- slider 4 -->
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="hero">
+                    <div
+                        class="hero-content flex-col-reverse lg:flex-row-reverse mt-8 md:mt-20 bg-rose-50 p-8 md:p-16 rounded-lg">
+                        <div class="flex-1">
+                            <img class="w-5/6 mx-auto" src="/images/slider/bike4.png" />
+                        </div>
+                        <div class="flex-1 pl-6">
+                            <h1 class="text-3xl md:text-5xl lg:text-7xl font-bold text-black w-5/6 md:w-full">Ride-on R15 V4 with Smile
+                            </h1>
+                            <p class="py-6 w-5/6 font-semibold text-gray-700">Amet minim mollit non deserunt ullamco
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <a
+                                class="bg-primary-color text-white text-sm md:text-base border-0 font-bold p-2 px-6 md:py-3 md:px-10 rounded-md cursor-pointer hover:bg-stone-600 inline-block my-6">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="text-3xl text-primary-color">❮</a>
+                    <a href="#slide1" class="text-3xl text-primary-color">❯</a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            
+        </div>
+
     </section>
 </body>
+
 </html>
